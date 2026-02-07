@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <div class="flex gap-3 h-screen">
-        <div class="w-2/10  bg-blue-500">
+    <div class="flex bg-gray-200 gap-3 h-screen">
+        <div class="w-2/10 h-full bg-blue-500">
             sidebar
         </div>
-        <div class="w-8/10 bg-">
+        <div class="w-8/10 bg-gray-100 ">
             <div class="h-1/10  flex align-items-center justify-center gap-3">
                 <div class="w-4/10 h-5/10 mt-5  border rounded-lg">
                     <ion-icon name="search" class="text-2xl  ml-3"></ion-icon>
@@ -42,7 +42,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="h-5/10 grid grid-cols-1 md:grid-cols-4 gap-2flex justify-center mt-9">
+                <div class="h-4/10 grid grid-cols-1 md:grid-cols-4 gap-2flex justify-center mt-9">
                     <div class="bg-white w-7/10 h-9/10 p-3 rounded-2xl border shadow-2xl text-center">
                         <h3 class="text-gray-500">Total Students</h3>
                         <p class="text-2xl font-bold">0</p>
@@ -62,17 +62,24 @@
                 </div>
             </div>
             <div class="h-4/10">
-                <table class="w-full text=left ">
-                    <thead class="bg-gray-200">
-                        <tr>
-                            <th class="p-2">STUDENT NAME</th>
-                            <th class="p-2">STUDENT ID</th>
-                            <th class="p-2">ATENDANCE STATUS</th>
-                            <th class="p-2">ACTION</th>
-                        </tr>
-                    </thead>
-                    <tbody id="studentList"></tbody>                
-                </table>
+                <div class="h-8/10">
+                    <table class="w-full text=left ">
+                        <thead class="bg-gray-200">
+                            <tr>
+                                <th class="p-2">STUDENT NAME</th>
+                                <th class="p-2">STUDENT ID</th>
+                                <th class="p-2">ATENDANCE STATUS</th>
+                                <th class="p-2">ACTION</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentList"></tbody>
+                    </table>
+                </div>
+                <div class="h-2/10 flex justify-end mb-5 mr-5">
+                    <button class="w-2/10 h-7/10 bg-blue-500 text-white px-6 py-2 rounded-2xl hover:bg-blue-700">
+                        Save Attendance
+                    </button>
+                </div>
             </div>
         </div>
     </div>
