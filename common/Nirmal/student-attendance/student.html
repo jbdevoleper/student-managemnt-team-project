@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="flex gap-3 h-screen">
+        <div class="w-2/10  bg-blue-500">
+            sidebar
+        </div>
+        <div class="w-8/10 bg-">
+            <div class="h-1/10  flex align-items-center justify-center gap-3">
+                <div class="w-4/10 h-5/10 mt-5  border rounded-lg">
+                    <ion-icon name="search" class="text-2xl  ml-3"></ion-icon>
+                    <input type="text" placeholder="searchh student..." class="pl-9 py-2  focus:outline-none ">
+                </div>
+                <div class="w-2/10 mt-5">
+                    <ion-icon name="notifications" class="text-3xl"></ion-icon>
+                </div>
+            </div>
+            <div class="h-5/10">
+                <div class=" h-3/10 flex gap-2">
+                    <div class="h-1/10 w-4/10 mt-6">
+                        <h3 class="text-3xl font-bold">Attendance Tracking</h3>
+                        <p class="text-md">Session: 09:00AM - 10:30AM</p>
+                    </div>
+                    <div class="h-5/10 w-3/10  mt-7 border  rounded-xl px-4 py-2 ">
+                        <ion-icon name="calendar-number" class="text-2xl "></ion-icon>
+                        <input type="date" class="">
+                    </div>
+                    <div class="h-5/10 w-3/10  mt-7 border  rounded-xl px-4 py-2 bg-blue-500">
+                        <ion-icon name="checkmark-done"></ion-icon>
+                        <button id="markAllPresent">
+                            Mark All Present
+                        </button>
+                    </div>
+                </div>
+                <div class="h-5/10 grid grid-cols-1 md:grid-cols-4 gap-2flex justify-center mt-9">
+                    <div class="bg-white w-7/10 h-9/10 p-3 rounded-2xl border shadow-2xl text-center">
+                        <h3 class="text-gray-500">Total Students</h3>
+                        <p class="text-2xl font-bold">0</p>
+                    </div>
+                    <div class="bg-green-200 w-7/10 h-9/10 p-3 rounded-2xl border shadow-2xl text-center">
+                        <h3 class="text-green-500">Present</h3>
+                        <p class="text-2xl font-bold text-green-500">0</p>
+                    </div>
+                    <div class="bg-red-200 w-7/10 h-9/10 p-3 rounded-2xl border shadow text-center">
+                        <h3 class="text-red-500">Absent</h3>
+                        <p class="text-2xl text-red-500 font-bold">0</p>
+                    </div>
+                    <div class="bg-orange-200 w-7/10 h-9/10 p-3 rounded-2xl border shadow text-center">
+                        <h3 class="text-orange-500">Late</h3>
+                        <p class="text-2xl font-bold text-orange-500">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="h-4/10">
+                <table class="w-full text=left ">
+                    <thead class="bg-gray-200">
+                        <tr>
+                            <th class="p-2">STUDENT NAME</th>
+                            <th class="p-2">STUDENT ID</th>
+                            <th class="p-2">ATENDANCE STATUS</th>
+                            <th class="p-2">ACTION</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentList"></tbody>                
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
