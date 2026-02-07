@@ -35,13 +35,13 @@
                 </div>
             </div>
             <!-- main div -->
-    <section class="bg-gray-100 h-168">
+    <section class="bg-gray-100 h-168 relative">
         <div class="flex justify-around items-center gap-120">
             <div class="m-5">
                 <h1 class="text-4xl font-bold">Dashboard Overview</h1>
                 <span class="text-sm font-extralight">Welcome back,heres whats happening today</span>
             </div>
-            <button class="bg-blue-700 text-white py-3 px-5 shadow-blue-300 shadow-md rounded-xl cursor-pointer hover:bg-blue-900 hover:shadow-lg capitalize">
+            <button class="bg-blue-700 text-white py-3 px-5 shadow-blue-300 shadow-md rounded-xl cursor-pointer hover:bg-blue-900 hover:shadow-lg capitalize" id="popupBtn">
                 + new enrollment
             </button>
         </div>
@@ -53,7 +53,7 @@
                 </div>
                 <div class="mr-20 mt-3">
                     <h1 class="font-extralight text-xl">Total students</h1>
-                    <span class="font-bold text-4xl">2,481</span>
+                    <span class="font-bold text-4xl" id="totalCount">2,481</span>
                 </div>
             </div>
             <div class="bg-white shadow-xl w-2/10 h-40 rounded-2xl flex flex-col items-center justify-center">
@@ -114,8 +114,21 @@
                 </div>
             </div>
         </div>
+        <!-- hidden div -->
+        <div class="h-70 w-120 shadow-md bg-white rounded-lg absolute top-50 left-90 hidden" id="hiddenPopup">
+            <div class="flex flex-col justify-center items-center gap-6 align-center h-full">
+                <h1 class="text-2xl font-bold">Add Student</h1>
+                <input type="text" name="text" placeholder="Enter the students Name" class="capitalize bg-gray-200 py-2 px-7 placeholder:text-black text-black rounded-lg" id="name">
+                <input type="number" name="number" placeholder="Enter roll no...." class="capitalize bg-gray-200 py-2 px-7 placeholder:text-black text-black rounded-lg" id="rollNo">
+                <div class="flex gap-5">
+                    <button class="bg-green-500 text-white capitalize px-5 py-2 rounded-xl cursor-pointer hover:bg-green-700" id="addBtn">add student</button>
+                    <button class="bg-red-500 text-white capitalize px-5 py-2 rounded-xl cursor-pointer hover:bg-red-700" id="cancelBtn">cancel</button>
+                </div>
+            </div>
+        </div>
     </section>
         </div>
     </div>
+    <script src="dashboard.js"></script>
 </body>
 </html>
