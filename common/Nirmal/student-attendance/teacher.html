@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body>
-        
+
+<body class="bg-gray-100 font-sans">
+    <div class="h-screen">
+        <div class="h-1/10 flex">
+            <header class="bg-white w-2/10 h-full shadow-sm px-6 flex justify-between items-center">
+                <ion-icon name="newspaper-outline" class="text-blue-500 text-4xl"></ion-icon>
+                <h1 class="text-xl font-bold text-blue-600">
+                    EduManage Admin</h1>
+            </header>
+            <nav class="flex gap-4 bg-white h-full w-8/10 texgt-gray-600-medium">
+                <a href="" class="hover:text-blue-500 mt-5 transition-colors">Dashboard</a>
+                <a href="" class="hover:text-blue-500 mt-5 transition-colors">Students</a>
+                <a href="" class="hover:text-blue-500 mt-5 transition-colors">Attendance</a>
+                <div class="w-4/10 h-5/10 mt-5  border rounded-lg ml-45">
+                    <ion-icon name="search" class="text-2xl"></ion-icon>
+                    <input type="text" placeholder="searchh student..." class="pl-9 py-2  focus:outline-none ">
+                </div>
+                <div class=" mt-5">
+                    <ion-icon name="notifications" class="text-3xl"></ion-icon>
+                </div>
+                <div class=" mt-5 ml-3">
+                    <ion-icon name="settings" class="text-3xl"></ion-icon>
+                </div>
+                <div class=" mt-5 ml-3">
+                    <ion-icon name="person-circle-sharp" class="text-3xl"></ion-icon>
+                </div>
+            </nav>
+        </div>
+        <div class="h-3/10 bg-red-500">schin</div>
+        <div class="h-6/10 bg-green-500">jebin</div>
+    </div>
+
 </body>
+
 </html>
