@@ -7,11 +7,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
     <div class="flex">
-        <div class="bg-green-500 h-screen w-2/10">
-            navbar
+        <div class="h-screen w-2/10">
+            <div class="flex gap-2 h-15 items-center mb-10 w-full justify-center">
+                <ion-icon name="logo-alipay" class="text-white bg-blue-700 px-3 py-2 rounded-lg"></ion-icon>
+                <h1 class="capitalize text-xl font-bold ">
+                    admin panel
+                </h1>
+            </div>
+            <nav>
+                <ul class="flex flex-col h-full gap-6 items-center nav-menu">
+                    <li class=""><a href="" class="px-15 py-4 rounded-lg flex items-center gap-2 nav-link active"><ion-icon name="stats-chart-sharp" class="text-xl"></ion-icon>Dashboard</a></li>
+                    <li class=""><a href="" class="px-15 py-4 rounded-lg flex items-center gap-2 nav-link"><ion-icon name="people-circle-sharp" class="text-2xl"></ion-icon>Students</a></li>
+                    <li class=""><a href="" class="px-15 py-4 rounded-lg flex items-center gap-2 nav-link"><ion-icon name="calendar-number-sharp" class="text-xl"></ion-icon>Attendance</a></li>
+                </ul>
+            </nav>
         </div>
         <div>
             <div>
