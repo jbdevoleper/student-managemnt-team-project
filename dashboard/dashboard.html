@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="flex">
+        <div class="h-screen w-2/10">
+            <div class="flex gap-2 h-15 items-center mb-10 w-full justify-center">
+                <ion-icon name="logo-alipay" class="text-white bg-blue-700 px-3 py-2 rounded-lg"></ion-icon>
+                <h1 class="capitalize text-xl font-bold ">
+                    admin panel
+                </h1>
+            </div>
+            <nav>
+                <ul class="flex flex-col h-full gap-6 items-center nav-menu">
+                    <li class=""><a href="" class="px-15 py-4 rounded-lg flex items-center gap-2 nav-link active"><ion-icon name="stats-chart-sharp" class="text-xl"></ion-icon>Dashboard</a></li>
+                    <li class=""><a href="" class="px-15 py-4 rounded-lg flex items-center gap-2 nav-link"><ion-icon name="people-circle-sharp" class="text-2xl"></ion-icon>Students</a></li>
+                    <li class=""><a href="" class="px-15 py-4 rounded-lg flex items-center gap-2 nav-link"><ion-icon name="calendar-number-sharp" class="text-xl"></ion-icon>Attendance</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <div>
+                <div class="flex justify-center w-300 mt-2 items-center shadow-md h-16">
+                    <div class="bg-gray-200 w-110 h-10 rounded-2xl flex items-center justify-center gap-2 mr-110">
+                        <ion-icon name="search-outline"></ion-icon>
+                        <input type="search" name="searchBar" id="searchBar" placeholder="Search students,classes" class="focus:outline-none">
+                    </div>
+                    <div class="text-xl mr-10">
+                        <ion-icon name="notifications-outline"></ion-icon>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div class="">
+                            <h1 class="text-xl font-bold">Admin</h1>
+                            <span class="text-sm font-extralight">Admin</span>
+                        </div>
+                        <div>
+                            <ion-icon name="person-circle-outline" class="text-5xl"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main div -->
+    <section class="bg-gray-100 h-168 relative">
+        <div class="flex justify-around items-center gap-120">
+            <div class="m-5">
+                <h1 class="text-4xl font-bold">Dashboard Overview</h1>
+                <span class="text-sm font-extralight">Welcome back,heres whats happening today</span>
+            </div>
+            <button class="bg-blue-700 text-white py-3 px-5 shadow-blue-300 shadow-md rounded-xl cursor-pointer hover:bg-blue-900 hover:shadow-lg capitalize" id="popupBtn">
+                + new enrollment
+            </button>
+        </div>
+        <div class="flex justify-center gap-20 m-2"> 
+            <div class="bg-white shadow-xl w-2/10 h-40 rounded-2xl flex flex-col items-center justify-center">
+                <div class="flex items-center gap-20">
+                    <ion-icon name="people" class="text-blue-700 text-xl bg-blue-200 py-4 px-4 rounded-2xl"></ion-icon>
+                    <div class="bg-green-100 w-17 rounded-xl py-1 text-center text-green-500 font-bold">+12.5%</div>
+                </div>
+                <div class="mr-20 mt-3">
+                    <h1 class="font-extralight text-xl">Total students</h1>
+                    <span class="font-bold text-4xl" id="totalCount">2,481</span>
+                </div>
+            </div>
+            <div class="bg-white shadow-xl w-2/10 h-40 rounded-2xl flex flex-col items-center justify-center">
+                <div class="flex items-center gap-20">
+                    <ion-icon name="book-sharp" class="text-violet-800 text-xl bg-violet-200 py-4 px-4 rounded-2xl"></ion-icon>
+                    <div class="bg-green-100 w-17 rounded-xl py-1 text-center text-green-500 font-bold">+2%</div>
+                </div>
+                <div class="mr-20 mt-3">
+                    <h1 class="font-extralight text-xl">Active classes</h1>
+                    <span class="font-bold text-4xl">42</span>
+                </div>
+            </div>
+            <div class="bg-white shadow-xl w-2/10 h-40 rounded-2xl flex flex-col items-center justify-center">
+                <div class="flex items-center gap-20">
+                    <ion-icon  name="calendar-number-sharp" class="text-orange-700 text-xl bg-orange-200 py-4 px-4 rounded-2xl"></ion-icon>
+                    <div class="bg-orange-100 w-17 rounded-xl py-1 text-center text-orange-500 font-bold">+1.5%</div>
+                </div>
+                <div class="mr-20 mt-3">
+                    <h1 class="font-extralight text-md">Today`s attendance</h1>
+                    <span class="font-bold text-4xl">91%</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-around items-center m-5">
+            <canvas class="bg-white rounded-xl h-90 shadow-xl w-190">
+
+            </canvas>
+            <div class="bg-white shadow-xl h-90 w-80 rounded-xl capitalize p-3">
+                <div>
+                    <h1 class="font-bold text-2xl">recent activities</h1>
+                    <span class="font-light text-sm">Latest updates</span>
+                    <div class="flex flex-col justify-between w-full gap-7">
+                        <div class="flex items-center gap-3 justify-center">
+                            <ion-icon name="person-add-sharp" class="bg-blue-200 text-blue-700 rounded-full p-3"></ion-icon>
+                            <div>
+                                <h1 class="font-bold text-md">new student registered</h1>
+                                <span class="font-extralight text-gray-700 text-sm">Alex johnson adeed</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 justify-center">
+                            <ion-icon name="alert-circle-sharp" class="bg-orange-200 text-orange-700 rounded-full p-3"></ion-icon>
+                            <div>
+                                <h1 class="font-bold text-md">Attendance alert</h1>
+                                <span class="font-extralight text-gray-700 text-sm">class has 15% attendance</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 justify-center">
+                            <ion-icon name="wallet-sharp" class="bg-green-200 text-green-700 rounded-full p-3"></ion-icon>
+                            <div>
+                                <h1 class="font-bold text-md">Fee amount recieved</h1>
+                                <span class="font-extralight text-gray-700 text-sm">3 hours ago</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-center cursor-pointer">
+                            <h1 class="border border-gray-400 rounded-xl text-center inline py-2 px-4">view all activity</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- hidden div -->
+        <div class="h-70 w-120 shadow-md bg-white rounded-lg absolute top-50 left-90 hidden" id="hiddenPopup">
+            <div class="flex flex-col justify-center items-center gap-6 align-center h-full">
+                <h1 class="text-2xl font-bold">Add Student</h1>
+                <input type="text" name="text" placeholder="Enter the students Name" class="capitalize bg-gray-200 py-2 px-7 placeholder:text-black text-black rounded-lg" id="name">
+                <input type="number" name="number" placeholder="Enter roll no...." class="capitalize bg-gray-200 py-2 px-7 placeholder:text-black text-black rounded-lg" id="rollNo">
+                <div class="flex gap-5">
+                    <button class="bg-green-500 text-white capitalize px-5 py-2 rounded-xl cursor-pointer hover:bg-green-700" id="addBtn">add student</button>
+                    <button class="bg-red-500 text-white capitalize px-5 py-2 rounded-xl cursor-pointer hover:bg-red-700" id="cancelBtn">cancel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
