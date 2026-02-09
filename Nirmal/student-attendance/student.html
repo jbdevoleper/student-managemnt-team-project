@@ -33,7 +33,7 @@
                     </div>
                     <div class="h-5/10 w-3/10  mt-7 border  rounded-xl px-4 py-2 ">
                         <ion-icon name="calendar-number" class="text-2xl "></ion-icon>
-                        <input type="date" class="">
+                        <input type="date" class="" id="dateInput">
                     </div>
                     <div class="h-5/10 w-3/10  mt-7 border  rounded-xl px-4 py-2 bg-blue-500">
                         <ion-icon name="checkmark-done"></ion-icon>
@@ -49,15 +49,15 @@
                     </div>
                     <div class="bg-green-200 w-7/10 h-9/10 p-3 rounded-2xl border shadow-2xl text-center">
                         <h3 class="text-green-500">Present</h3>
-                        <p class="text-2xl font-bold text-green-500">0</p>
+                        <p class="text-2xl font-bold text-green-500" id="present">0</p>
                     </div>
                     <div class="bg-red-200 w-7/10 h-9/10 p-3 rounded-2xl border shadow text-center">
                         <h3 class="text-red-500">Absent</h3>
-                        <p class="text-2xl text-red-500 font-bold">0</p>
+                        <p class="text-2xl text-red-500 font-bold" id="absent">0</p>
                     </div>
                     <div class="bg-orange-200 w-7/10 h-9/10 p-3 rounded-2xl border shadow text-center">
                         <h3 class="text-orange-500">Late</h3>
-                        <p class="text-2xl font-bold text-orange-500">0</p>
+                        <p class="text-2xl font-bold text-orange-500" id="late">0</p>
                     </div>
                 </div>
             </div>
@@ -75,11 +75,12 @@
                         <tbody id="studentList"></tbody>
                     </table>
                 </div>
-                <div class="h-2/10 flex justify-end mb-5 mr-5">
-                    <button class="w-2/10 h-7/10 bg-blue-500 text-white px-6 py-2 rounded-2xl hover:bg-blue-700" id="saveBtn">
-                        Save Attendance
-                    </button>
-                </div>
+            </div>
+            <div class=" flex justify-end  mr-5">
+                <button class="w-2/10 h-4/10 bg-blue-500 mt-20 text-white px-3 py-2 rounded-2xl hover:bg-blue-700"
+                    id="saveBtn">
+                    Save Attendance
+                </button>
             </div>
         </div>
     </div>
