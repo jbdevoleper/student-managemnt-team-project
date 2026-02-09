@@ -7,30 +7,27 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="bg-gray-300">
-       <div class="container flex">
+       <div class="h-screen w-screen flex">
                 <div class="leftsidebar">
-                <img src="imag1.avif"class="h-screen w-200 realtive rounded-l-md m-2" alt="">
-                <span class="absolute top-50 left-45 bg-orange-500 rounded-sm text-xl font-bold font-mono text-[30px] text-white p-1">Empowering Modern Education</span>
-                <p class="absolute top-65 left-48 text-xl font-bold font-mono bg-orange-500 text-white rounded-sm p-1">Student Success & Accademic Excellence</p>
+                <img src="imag1.avif"class="h-screen w-200 realtive rounded-l-md" alt="">
+                <span class="absolute top-60 left-45 bg-orange-500 rounded-sm text-xl font-bold font-mono text-[30px] text-white p-1">Empowering Modern Education</span>
+                <p class="absolute top-75 left-48 text-xl font-bold font-mono bg-orange-500 text-white rounded-sm p-1">Student Success & Accademic Excellence</p>
                 </div>
-          <div class="right sidebar m-2 bg-white h-screen w-190 rounded-r-md relative">
+          <div class="right sidebar bg-white h-screen w-190 rounded-r-md relative">
                 <div>
                     <img src="logo.jpg" class="h-30 absolute top-5 left-20 rounded-full shadow-lg"alt="">
                     <h2 class="text-xl font-bold absolute top-10 left-55 ">Student Management System</h2>
                     <h1 class="absolute font-serif top-17 left-55 text-gray-500">Portal Access</h1>
                 </div>
-                <div class="switch absolute bg-gray-300 h-9 w-70 rounded-full absolute top-45 left-60">
-                <div class="toggle flex gap-15 p-1 font-sans font-bold text-sm ">
-                    <div class="staff text-blue-600 ">
-                        <button class="bg-white rounded-full p-1 w-35 cursor-pointer">
-                        Teacher / Staff
+                    <div class="flex bg-gray-300 absolute top-50 left-40 rounded-full p-1 w-80">
+                        <button class="flex-1 py-2 rounded-full text-gray-600 font-semibold hover:bg-white active:bg-white  hover:text-blue-600 transition ">
+                            Teacher/staff
                         </button>
+                        <button  class="flex-1 py-2 rounded-full text-gray-600 font-semibold hover:bg-white hover:text-blue-600 transition ">
+                            Student
+                        </button>
+
                     </div>
-                    <div class="student text-gray-500 "> 
-                     <button class="rounded-full p-1 cursor-pointer">Student</button>
-                    </div>
-                </div>
-                </div>
                 <div class="sign absolute top-70 left-40">
                     <h3 class="text-2xl font-bold font-mono">Sign In</h3>
                     <p class="text-sm text-gray-500 mt-1">Welcome back! please enter your details.</p>
@@ -46,7 +43,7 @@
                      <img src="eye.png" class="h-4 absolute top-27 left-90 cursor-pointer opacity-60 hover:opacity-100 " onclick="show()" id="">
                      <p class="mt-3 font-bold text-sm text-blue-600 cursor-pointer">Forgot Password ?</p>
                      <p id="error" class="text-red-500 text-sm mb-2"></p>
-                     <button onclick="login()" class="submit font-bold text-sm font-mono text-white bg-blue-600 p-2 h-9 w-100 rounded-xl mt-5 cursor-pointer">LogIn -></button> 
+                     <button onclick="login()" class="submit font-bold text-sm font-mono text-white bg-blue-600 p-2 h-9 w-100 rounded-xl mt-5 cursor-pointer hover:bg-blue-500">LogIn -></button> 
                    </div>
                 </div>
                 <div class="absolute top-160 left-45 text-sm text-gray-500 ">
