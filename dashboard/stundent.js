@@ -79,4 +79,3 @@ saveBtn.addEventListener("click",()=>{
     localStorage.setItem("attendanceData",JSON.stringify(students));
     alert("Attendance saved!");
 });
-

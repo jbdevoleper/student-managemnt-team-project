@@ -74,7 +74,7 @@ navLinks.forEach(link=>{
         });
         link.classList.add("active");
     });
-    link.addEventListener("click",(e)=>{
-        e.preventDefault();
-    })
+    // link.addEventListener("click",(e)=>{
+    //     e.preventDefault();
+    // })
 })
